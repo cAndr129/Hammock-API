@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page</title>
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="results-page.css">
+</head>
+<body>
+<div class="nav-container">
+    <nav id="nav-bar">
+        <button class="logo-button">hammock</button>
+        <div class="search-bar">
+            <form>
+                <div class="location-input">
+                    <label>Location</label>
+                    <input type="text" id="srch-bar-location" placeholder="Where are you going?">
+                </div>
+                <div>
+                    <label>Check in</label>
+                    <input type="text" id="srch-bar-start-date" placeholder="Add date">
+                </div>
+                <div>
+                    <label>Check out</label>
+                    <input type="text" id="srch-bar-end-date" placeholder="Add date">
+                </div>
+                <div>
+                    <label>Guests</label>
+                    <input type="text" id="srch-bar-guests" placeholder="Add guests">
+                </div>
+                <button type="submit" id="srch-bar-submit"><img src="images/search-icon.png"></button>
+            </form>
+        </div>
+        <ul class="nav-items">
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </nav>
+</div>
+<main class="main">
+    <div id="divider"></div>
+    <section class="filter-container">
+        <h2 id="Filters">Filters</h2>
+        <div class="price-wrapper">
+            <h3>Price</h3>
+            <div class="price-input">
+                <div class="field">
+                    <span>Min</span>
+                    <input type="number" class="input-min" value="2500">
+                </div>
+                <div class="separator">-</div>
+                <div class="field">
+                    <span>Max</span>
+                    <input type="number" class="input-max" value="7500">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="progress"></div>
+            </div>
+            <div class="range-input">
+                <input type="range" class="range-min" min="0" max="10000" value="2500" step="10">
+                <input type="range" class="range-max" min="0" max="10000" value="7500" step="10">
+            </div>
+        </div>
+        <div class="guest-container">
+            <h3>Guest</h3>
+            <div class="counter-wrapper">
+                <label>Adults</label>
+                <span id="adult-minus" class="minus">-</span>
+                <span id="adult-num" class="num">00</span>
+                <span id="adult-plus" class="plus">+</span>
+            </div>
+            <div class="counter-wrapper">
+                <label>Children</label>
+                <span id="children-minus" class="minus">-</span>
+                <span id="children-num" class="num">00</span>
+                <span id="children-plus" class="plus">+</span>
+            </div>
+
+        </div>
+
+        <div class="property-container">
+            <h3>Property Type</h3>
+            <div class="property-checkbox-wrapper">
+                <label id="hotel-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="hotel-checkbox">
+                    Hotel
+                </label>
+                <label id="apartment-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="apartment-checkbox">
+                    Apartment
+                </label>
+                <label id="hostel-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="hostel-checkbox">
+                    Hostel/Backpacker
+                </label>
+                <label id="condo-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="condo-checkbox">
+                    Condo
+                </label>
+                <label id="house-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="house-checkbox">
+                    Entire House
+                </label>
+            </div>
+        </div>
+
+        <div class="Amenities-container">
+            <h3>Amenities</h3>
+            <div class="amenities-checkbox-wrapper">
+                <label id="breakfast-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="breakfast-checkbox">
+                    Free Breakfast
+                </label>
+                <label id="wifi-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="wifi-checkbox">
+                    Free Wifi
+                </label>
+                <label id="kitchen-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="kitchen-checkbox">
+                    Kitchen
+                </label>
+                <label id="pet-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="pet-checkbox">
+                    Pet Friendly
+                </label>
+                <label id="parking-label" class="checkbox">
+                    <input class="checkbox-input" type="checkbox" id="parking-checkbox">
+                    Free Parking
+                </label>
+            </div>
+        </div>
+        <div>
+            <button id="filter-search-btn">Refresh Search</button>
+        </div>
+
+    </section>
+    <section id="card-container">
+    </section>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="results-page.js"></script>
+</body>
+</html>

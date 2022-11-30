@@ -1,0 +1,67 @@
+body{
+    font-family: "Helvetica Neue";
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-button{
+    background: transparent;
+    border: none;
+    color: #008489;
+    font-weight: 900;
+    font-size: 36px;
+    display: inline-block;
+    background: #fff;
+    cursor: pointer;
+}
+.nav-bar{
+    background: #ffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.nav-items li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-items li a{
+    text-decoration: none;
+    color: #008489;
+}
+.search-bar{
+    background: #fff;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50%;
+}
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #008489;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button image{
+    width: 7px;
+    height: auto;
+    margin-top: 3px;
+}
+.location-input{
+    flex: 1;
+}
+.search-bar form label{
+    font-weight: 600;
+}
